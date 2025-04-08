@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import federation from '@originjs/vite-plugin-federation';
+import path from 'path';
 
 export default defineConfig({
   plugins: [
@@ -11,6 +12,11 @@ export default defineConfig({
       shared: ['react', 'react-dom'],
     }),
   ],
+  resolve: {
+    alias: {
+      '@repo/ui': path.resolve(__dirname, '../../packages/ui/src'),
+    },
+  },
   build: {
     target: 'esnext',
   },

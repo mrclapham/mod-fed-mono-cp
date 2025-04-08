@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "mod-fed-turbo-cp",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -9,6 +9,7 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.4.0",
     "prettier": "^3.5.3",
     "turbo": "^2.5.0",
     "typescript": "5.8.2"

@@ -35,7 +35,7 @@
 // export default App
 
 
-import Button from 'ui/Button';
+import { Button } from "@repo/ui/button";
 
 function App() {
   return (

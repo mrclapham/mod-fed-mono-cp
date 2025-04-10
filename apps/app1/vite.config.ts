@@ -3,6 +3,9 @@ import federation from '@originjs/vite-plugin-federation';
 import path from 'path';
 
 export default defineConfig({
+  server: {
+    port: 3010
+  },
   plugins: [
     federation({
       name: 'app1',
